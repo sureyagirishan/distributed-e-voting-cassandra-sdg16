@@ -1,0 +1,58 @@
+# Distributed E-Voting Data Management using Cassandra - Workflow Automation
+
+## Project Overview
+This project implements a distributed e-voting system using Cassandra database simulation.
+Aligned with SDG 16: Peace, Justice and Strong Institutions - promoting transparent electoral processes.
+
+## Files Description
+
+1. input.txt
+   - Contains sample voting data in CSV format
+   - Columns: voter_id, candidate
+   - Represents votes cast in a distributed voting system
+
+2. main.py
+   - Python script that simulates Cassandra distributed database operations
+   - Reads votes from input.txt
+   - Simulates distributed write/read operations
+   - Counts votes and generates election results
+   - Outputs results to output.csv
+
+3. .github/workflows/evote.yml
+   - GitHub Actions workflow for automated CI/CD
+   - Sets up Python environment
+   - Installs required dependencies
+   - Runs the e-voting simulation
+   - Uploads output.csv as an artifact
+
+## Automation Steps
+
+1. Push trigger
+   - Workflow automatically runs on push to main branch
+
+2. Environment setup
+   - Uses ubuntu-latest runner
+   - Sets up Python 3.x
+
+3. Dependency installation
+   - Installs cassandra-driver (or uses stubs for simulation)
+
+4. Execute voting simulation
+   - Runs main.py to process votes
+   - Simulates distributed Cassandra operations
+
+5. Artifact upload
+   - Uploads output.csv containing election results
+   - Makes results downloadable from Actions tab
+
+## Expected Output
+- output.csv: Election results with candidate names and vote counts
+- Sorted by votes in descending order
+- Demonstrates transparent vote counting
+
+## SDG 16 Connection
+Supports democratic processes through:
+- Transparent vote recording
+- Distributed data management for security
+- Auditable election results
+- Technology-enabled electoral integrity
