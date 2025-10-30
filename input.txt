@@ -1,0 +1,11 @@
+voter_id,candidate
+V001,Alice
+V002,Bob
+V003,Alice
+V004,Charlie
+V005,Bob
+V006,Alice
+V007,Charlie
+V008,Bob
+V009,Alice
+V010,Alice
